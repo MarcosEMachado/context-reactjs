@@ -1,8 +1,8 @@
-import { userContext } from  'react';
+import { useContext } from  'react';
 import { UserContext } from '../../contexts/user';
 
 function Nome() {
-    const { alunos, setAlunos } = userContext(UserContext);
+    const { alunos, setAlunos } = useContext(UserContext);
 
     return (
       <div>

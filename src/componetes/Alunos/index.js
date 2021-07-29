@@ -1,9 +1,9 @@
-import { userContext } from  'react';
+import { useContext } from  'react';
 import { UserContext } from '../../contexts/user';
 import Nome from '../Nome';
 
 function Alunos() {
-    const { qtdAlunos } = userContext(UserContext);
+    const { qtdAlunos } = useContext(UserContext);
 
     return (
       <div>
